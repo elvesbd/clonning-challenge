@@ -8,14 +8,15 @@ import {
   SchoolIcon,
   UniversityIcon,
 } from './styles';
-import Logo from '../../assets/images/logo.jpg';
+import LogoProfile from '../LogoProfile';
+
 
 const CardProfile: React.FC = () => {
   return (
     <Container>
       <Card>
         <CardHeader>
-          <img src={Logo} alt="" />
+          <LogoProfile />
           <h1>Kenedy Moraes</h1>
           <small>@kenedymoraes</small>
           <span>Front-end Developer</span>
