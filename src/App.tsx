@@ -1,11 +1,12 @@
+import Layout from './components/Layout';
 import GlobalStyles from './assets/styles/GlobalStyles';
 
 function App() {
   return (
-    <div className="App">
-      <h1>hello world</h1>
+    <>
+      <Layout />
       <GlobalStyles />
-    </div>
+    </>
   );
 }
 
