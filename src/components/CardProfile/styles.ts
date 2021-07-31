@@ -23,12 +23,7 @@ export const CardHeader = styled.div`
   justify-content: center;
   margin-top: 4.5rem;
 
-  img {
-    border: 4px solid var(--blue-400);
-    border-radius: 50%;
-    width: 8rem;
-    height: 8rem;
-  }
+
 
   h1 {
     margin-top: 1rem;
@@ -54,6 +49,7 @@ export const CardInfo = styled.div`
   display: flex;
   align-items: center;
   margin-top: 1.5rem;
+  margin-left: -0.3rem;
   color: var(--gray-200);
 
   span {
@@ -71,6 +67,15 @@ export const CardFooter = styled.div`
     font-size: 1rem;
     color: var(--gray-200);
   }
+
+  div + div {
+    margin-left: 1rem;
+  }
+
+  .incicle .uninorte {
+    display: flex;
+    align-items: center;
+  }
 `;
 
 export const LocationIcon = styled(Location)`
@@ -80,16 +85,16 @@ export const LocationIcon = styled(Location)`
 `;
 
 export const SchoolIcon = styled(School)`
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
   margin-right: 0.5rem;
   background: var(--gray-200);
   color: var(--white-100);
 `;
 
 export const UniversityIcon = styled(BuildingBankLink)`
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
   margin-right: 0.5rem;
   background: var(--gray-200);
   color: var(--white-100);
