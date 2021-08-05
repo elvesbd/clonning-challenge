@@ -1,3 +1,4 @@
+import Publication from '../Publication';
 import { Container, CardPublication, PublishIcon, ImageIcon, CameraVideoIcon } from './styles';
 
 const ArticlePublication: React.FC = () => {
@@ -16,6 +17,8 @@ const ArticlePublication: React.FC = () => {
 
         <input type="text" placeholder="ou publique um artigo na InCicle"/>
       </CardPublication>
+
+      <Publication />
     </Container>
   );
 }
