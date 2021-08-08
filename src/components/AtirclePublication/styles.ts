@@ -58,10 +58,12 @@ export const ImageIcon = styled(Images)`
   width: 2rem;
   height: 2rem;
   color: var(--gray-100);
+  cursor: pointer;
 `;
 
 export const CameraVideoIcon = styled(CameraVideo)`
   width: 2rem;
   height: 2rem;
   color: var(--gray-100);
+  cursor: pointer;
 `;

@@ -21,10 +21,12 @@ const CardProfile: React.FC = () => {
           <small>@kenedymoraes</small>
           <span>Front-end Developer</span>
         </CardHeader>
+
         <CardInfo >
           <LocationIcon />
           <span>Fortaleza/Ceara - Brasil</span>
         </CardInfo>
+
         <CardFooter>
           <div className="incicle">
             <SchoolIcon />
