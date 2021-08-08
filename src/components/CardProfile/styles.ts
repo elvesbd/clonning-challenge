@@ -90,6 +90,7 @@ export const SchoolIcon = styled(School)`
   margin-right: 0.5rem;
   background: var(--gray-200);
   color: var(--white-100);
+  cursor: pointer;
 `;
 
 export const UniversityIcon = styled(BuildingBankLink)`
@@ -98,4 +99,5 @@ export const UniversityIcon = styled(BuildingBankLink)`
   margin-right: 0.5rem;
   background: var(--gray-200);
   color: var(--white-100);
+  cursor: pointer;
 `;
