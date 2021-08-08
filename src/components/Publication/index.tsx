@@ -2,8 +2,15 @@ import { ImgProfilePublication } from '../../styles';
 import Logo from '../../assets/images/logo.jpg';
 
 import { Container, ArrowDown, Watche, Handbag, Like, Comment, Shared } from './styles';
+import { useState } from 'react';
 
 const Publication: React.FC = () => {
+  const [like, setLike] = useState(false);
+
+  function handleLike() {
+    setLike((prevState) => prevState === false ? true : false);
+  }
+
   return (
     <Container>
       <div className="header">
@@ -37,7 +44,7 @@ const Publication: React.FC = () => {
     <div className="information">
       <div className="information-like">
         <Like />
-        <small>Seja o primeiro a curtir</small>
+        <small>{like ? '1 pessoa curtiu isso' : 'Seja o primeiro a curtir'}</small>
       </div>
       <div>
         <span>0 comentários</span>
@@ -46,7 +53,7 @@ const Publication: React.FC = () => {
     </div>
 
     <div className="buttons">
-      <button><Like /> Curtir</button>
+      <button onClick={handleLike}><Like /> Curtir</button>
       <button><Comment /> Comentários</button>
       <button><Shared /> Compartilhar</button>
     </div>
